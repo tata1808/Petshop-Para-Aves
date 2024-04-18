@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Birds PetShop</h1>
+        <div class="logo">
+            <img src="imagens/_8bf143ed-2f97-4bd2-8588-352983e9f2f2.jpg">
+            <h1>Jon´s Petshop</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -19,11 +22,15 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <form id="search-form" action="#" method="get">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
     </header>
 
     <section id="sobre">
         <h2>Sobre as Aves</h2>
-        <p>Algumas informações sobre as aves...</p>
+        <p>Algumas informações Sobre As Aves</p>
     </section>
 
     <section id="galeria">
@@ -54,5 +61,11 @@
     <footer>
         <p>&copy; 2024 Birds PetShop. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
